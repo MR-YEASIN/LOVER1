@@ -67,9 +67,9 @@ imt="SETU"
 ak="CLASS3-"
 myid=uuid.uuid4().hex[:8].upper()
 try:
-	key1 = open('/storage/emulated/0/android8.txt', 'r').read()
+	key1 = open('/storage/emulated/0/01.txt', 'r').read()
 except:
-	kok=open('/storage/emulated/0/android8.txt', 'w')
+	kok=open('/storage/emulated/0/01.txt', 'w')
 	kok.write(myid+imt)
 	kok.close()
             
@@ -306,7 +306,7 @@ def superuser():
     uuid = str(os.geteuid()) + str(os.getlogin()) 
     id = "5".join(uuid)
     print(logo)
-    DARK=requests.get("https://github.com/i-hate-love/LOVER/blob/main/Approved.txt").text
+    DARK=requests.get("https://github.com/i-hate-love/LOVER1/blob/main/Approved.txt").text
     if id in DARK:
         Main()
     else:
